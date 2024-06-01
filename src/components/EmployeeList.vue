@@ -76,6 +76,7 @@ const onPageChanged=(newPage:number)=>{
     grid-template-columns: 1/2;
     gap:20px;
     padding: 3%;
+    margin-top: 10px;
   }
   .img-avatar{
     width:90px;
