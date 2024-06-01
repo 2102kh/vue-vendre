@@ -35,16 +35,17 @@ const onPageChanged=(newPage:number)=>{
 <template>
   <div class="employees-list">
     <div v-for="employee in employees" :key="employee.id" class="employee-card">
-      <img :src="employee.avatar"  />
+      <img :src="employee.avatar"  class="img-avatar"/>
       <p>{{ employee.first_name }} {{ employee.last_name }}</p>
       <a :href="`mailto:${employee.email}`">{{ employee.email }}</a>
     </div> 
   </div>
+  <div>
   <EmployeePagination 
     :current-page="currentPage"
     :total-pages="totalPages"
     @change="onPageChanged"/>
-  
+  </div>
 </template>
 
 <style scoped>
@@ -61,10 +62,13 @@ const onPageChanged=(newPage:number)=>{
   color:black;
   font-size:700;
  }
-
-
 }
-img{
+
+.img-avatar{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 50%;
+  
 }
 </style>

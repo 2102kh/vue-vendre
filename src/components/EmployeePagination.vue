@@ -22,7 +22,7 @@ const onNextPage=()=>{
 </script>
 
 <template>
-    <div>
+    <div class="buttons">
        <button @click="onPrevPageClick" :disabled="currentPage===1">Föregående</button>
        <span>{{ currentPage }}av {{ totalPages }}</span>
        <button @click="onNextPage" :disabled="currentPage===totalPages">Nästa</button>
@@ -60,4 +60,9 @@ span {
   margin: 0 10px;
   font-size: 16px;
 }
+/* .buttons{
+  background-color:rgb(238,235,252) ; 
+  padding-bottom: 20px;
+  width: 100vw;
+} */
 </style>

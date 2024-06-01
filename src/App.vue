@@ -11,9 +11,8 @@ export default {
 <template>
   <div id="app">
     <h1>Välkommen till Vendre!</h1>
-    <p>Vi är stolta över vårt team av begåvade och dedikerade medarbetrare som bidrar till vår framgång varje dag</p>
-    <EmployeeList />
-    
+    <h3>Vi är stolta över vårt team av begåvade och dedikerade medarbetrare som bidrar till vår framgång varje dag</h3>
+    <EmployeeList /> 
   </div>
 
 </template>
@@ -31,5 +30,10 @@ export default {
 }
 h1{
   color:rgb(83,51,237);
+  font-weight: 700;
 }
+h3{
+  font-weight: 600;
+}
+
 </style>
