@@ -13,12 +13,14 @@ export default {
     <h1>Välkommen till Vendre!</h1>
     <p>Vi är stolta över vårt team av begåvade och dedikerade medarbetrare som bidrar till vår framgång varje dag</p>
     <EmployeeList />
+    
   </div>
+
 </template>
 
 <style scoped>
 #app{
-padding:10% 5%;
+  padding:10% 5%;
   width: 100vw;
   height: 100vh;
   /* background-color: #F7C0FE; */
