@@ -22,7 +22,7 @@ export default {
   width: 100vw;
   height: 100vh;
   /* background-color: #F7C0FE; */
-   background-color:rgb(238,235,252) ; 
+  background-color:rgb(238,235,252) ; 
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -40,15 +40,15 @@ h3{
 }
 @media(max-width:600px){
   #app{
-    padding: 5% 2%;
+    padding: 6% 2%;
   }
   h1{
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
   }
   h3{
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
   }
 
 }
