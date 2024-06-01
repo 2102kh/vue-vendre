@@ -21,9 +21,9 @@ const onNextPage=()=>{
 </script>
 
 <template>
-    <div class="buttons">
+    <div class="pagination">
        <button @click="onPrevPageClick" :disabled="currentPage===1">Föregående</button>
-       <span>{{ currentPage }}av {{ totalPages }}</span>
+       <span>{{ currentPage }} av {{ totalPages }}</span>
        <button @click="onNextPage" :disabled="currentPage===totalPages">Nästa</button>
     </div>
 </template>
@@ -32,9 +32,10 @@ const onNextPage=()=>{
 
 .pagination {
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 button {
@@ -47,7 +48,7 @@ button {
   cursor: pointer;
   font-size: 1.2rem;
   border-radius: 5px;
-  margin-top: 2.8rem;
+ 
 }
 
 button:disabled {
@@ -56,12 +57,18 @@ button:disabled {
 }
 
 span {
-  margin: 0 10px;
-  font-size: 16px;
+  margin:10px;
+  font-size:16px;
 }
-/* .buttons{
-  background-color:rgb(238,235,252) ; 
-  padding-bottom: 20px;
-  width: 100vw;
-} */
+@media(max-width:500px){
+  button{
+    padding: 12px 20px;
+    font-size: 1rem;
+    margin: 5px 10px;
+  }
+  span{
+    font-size: 0.8rem;
+  }
+}
+
 </style>

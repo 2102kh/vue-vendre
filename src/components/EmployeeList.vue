@@ -51,24 +51,35 @@ const onPageChanged=(newPage:number)=>{
 <style scoped>
 .employees-list{
   display: grid;
-  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
   justify-items: center;
   gap:30px;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
 } 
-.employee-card{
+.employee-card a{
  padding-top: 20px;
- a{
-  color:black;
-  font-size:700;
- }
+ text-align: center;
+ color:black;
 }
-
+ 
 .img-avatar{
   width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
   
+}
+@media(max-width:550px){
+  .employees-list{
+    grid-template-columns: 1/2;
+    gap:20px;
+    padding: 3%;
+  }
+  .img-avatar{
+    width:90px;
+    height:90px;
+  }
 }
 </style>

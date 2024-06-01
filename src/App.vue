@@ -14,8 +14,7 @@ export default {
     <h3>Vi är stolta över vårt team av begåvade och dedikerade medarbetrare som bidrar till vår framgång varje dag</h3>
     <EmployeeList /> 
   </div>
-
-</template>
+  </template>
 
 <style scoped>
 #app{
@@ -27,13 +26,30 @@ export default {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 h1{
   color:rgb(83,51,237);
   font-weight: 700;
+  margin-bottom: 20px;
 }
 h3{
   font-weight: 600;
+  margin-bottom:20px;
 }
+@media(max-width:600px){
+  #app{
+    padding: 5% 2%;
+  }
+  h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 
+}
 </style>
